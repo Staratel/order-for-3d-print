@@ -8,3 +8,10 @@ wheels/
 
 # Virtual environments
 .venv
+.idea
+venv*
+diff
+env
+__pycache__
+.DS_Store
+
