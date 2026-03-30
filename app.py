@@ -17,7 +17,7 @@ def get_external_ip():
 async def on_startup(app):
     ip = get_external_ip()
     logger.info(f"Startup watchdog. {CHAT_ID=}, {ip=}")
-    await app.bot.send_message(chat_id=CHAT_ID, text=ip)
+    await app.bot.send_message(chat_id=CHAT_ID, text=f"Бот стартовал по адресу {ip}")
 
 
 async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
